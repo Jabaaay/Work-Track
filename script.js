@@ -130,3 +130,19 @@ document.getElementById('downloadForm').addEventListener('submit', async functio
         console.error('Download error:', error);
     }
 }); 
+
+// Animation on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+// Observe all elements with animate-on-scroll class
+document.querySelectorAll('.animate-on-scroll').forEach((el) => {
+    observer.observe(el);
+});
