@@ -35,7 +35,7 @@ document.getElementById('downloadForm').addEventListener('submit', async functio
             }
 
             // Create direct download link
-            const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+            const directDownloadUrl = https://drive.google.com/uc?export=download&id=${fileId};
             
             // Show success message before opening new tab
             await Swal.fire({
@@ -65,7 +65,7 @@ document.getElementById('downloadForm').addEventListener('submit', async functio
                 Swal.fire({
                     icon: 'error',
                     title: 'Access Denied',
-                    text: `Cannot access this URL (Status: ${response.status}). The server might be blocking the request.`,
+                    text: Cannot access this URL (Status: ${response.status}). The server might be blocking the request.,
                     confirmButtonColor: '#0d6efd'
                 });
                 return;
@@ -79,7 +79,7 @@ document.getElementById('downloadForm').addEventListener('submit', async functio
                 Swal.fire({
                     icon: 'error',
                     title: 'Download Failed',
-                    text: `Download failed (Status: ${downloadResponse.status}). Please try a different URL.`,
+                    text: Download failed (Status: ${downloadResponse.status}). Please try a different URL.,
                     confirmButtonColor: '#0d6efd'
                 });
                 return;
@@ -126,7 +126,7 @@ document.getElementById('downloadForm').addEventListener('submit', async functio
         });
         
         statusDiv.className = 'error';
-        statusDiv.textContent = `Error: ${error.message}`;
+        statusDiv.textContent = Error: ${error.message};
         console.error('Download error:', error);
     }
 }); 
