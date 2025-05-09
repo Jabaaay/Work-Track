@@ -146,3 +146,5 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.animate-on-scroll').forEach((el) => {
     observer.observe(el);
 });
+
+// Smooth scroll for anchor links
